@@ -17,6 +17,14 @@ public class Estudiantes extends Persona {
         this.codigoEstudiantil = codigoEstudiantil;
     }
 
+    public String getCodigoEstudiantil() {
+        return codigoEstudiantil;
+    }
+
+    public void setCodigoEstudiantil(String codigoEstudiantil) {
+        this.codigoEstudiantil = codigoEstudiantil;
+    }
+
     
     
 }
