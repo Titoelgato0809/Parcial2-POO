@@ -112,6 +112,23 @@ public class Institucion {
                 }
             }
         }
+                double totalPrestaciones = 0;
+
+        for (int i = 0; i < ordenados.length; i++) {
+            Profesores p = ordenados[i];
+            totalPrestaciones += p.calcularPrestaciones();
+
+            reporte += (i + 1) + ". " + p.getNombre() + "\n";
+            reporte += "   Cédula: " + p.getCedula() + "\n";
+            reporte += "   Área: " + p.getAreaTrabajo() + "\n";
+            reporte += "   Pago total: $" + String.format("%,.2f", p.calcularPagoMensual()) + "\n";
+            reporte += "   Prestaciones: $" + String.format("%,.2f", p.calcularPrestaciones()) + "\n\n";
+        }
+
+        reporte += "Total de profesores: " + cantidadProfesores + "\n";
+        reporte += "Total de prestaciones sociales: $" + String.format("%,.2f", totalPrestaciones) + "\n";
+        return reporte;
+    }
 
 
 
