@@ -130,6 +130,38 @@ public class Institucion {
         return reporte;
     }
 
+    public Estudiantes[] getEstudiantes() {
+        return estudiantes;
+    }
 
+    public Profesores[] getProfesores() {
+        return profesores;
+    }
+
+    public int getCantidadEstudiantes() {
+        return cantidadEstudiantes;
+    }
+
+    public int getCantidadProfesores() {
+        return cantidadProfesores;
+    }
+
+    public void setEstudiantes(Estudiantes[] estudiantes) {
+        this.estudiantes = estudiantes;
+    }
+
+    public void setProfesores(Profesores[] profesores) {
+        this.profesores = profesores;
+    }
+
+    public void setCantidadEstudiantes(int cantidadEstudiantes) {
+        this.cantidadEstudiantes = cantidadEstudiantes;
+    }
+
+    public void setCantidadProfesores(int cantidadProfesores) {
+        this.cantidadProfesores = cantidadProfesores;
+    }
+
+        
 
 }
