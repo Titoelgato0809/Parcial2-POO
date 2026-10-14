@@ -12,6 +12,8 @@ import Vista.Vista;
 public class Parcial2POO {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Controlador controlador = new Controlador();
+        Vista vista = new Vista(controlador);
+        vista.setVisible(true);
     }
 }
