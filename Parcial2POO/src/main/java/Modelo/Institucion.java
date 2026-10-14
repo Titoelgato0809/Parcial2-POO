@@ -22,4 +22,13 @@ public class Institucion {
         cantidadEstudiantes = 0;
         cantidadProfesores = 0;
     }
+    
+        public boolean registrarEstudiante(Estudiantes estudiante) {
+        if (cantidadEstudiantes < estudiantes.length) {
+            estudiantes[cantidadEstudiantes] = estudiante;
+            cantidadEstudiantes++;
+            return true;
+        }
+        return false;
+    }
 }
