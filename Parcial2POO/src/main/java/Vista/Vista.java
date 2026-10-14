@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Vista;
+import Controlador.Controlador;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -11,6 +13,7 @@ package Vista;
 public class Vista extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Vista.class.getName());
+    private Controlador controlador;
 
     /**
      * Creates new form Vista
@@ -82,15 +85,25 @@ public class Vista extends javax.swing.JFrame {
 
         jLabel5.setText("Teléfono");
 
+        txtMes.addActionListener(this::txtMesActionPerformed);
+
+        txtDia1.addActionListener(this::txtDia1ActionPerformed);
+
+        txtAnio.addActionListener(this::txtAnioActionPerformed);
+
         jLabel6.setText("Código estudiantil");
 
         jLabel7.setText("Registro de estudiante");
 
+        txtCodigoEstudiantil.addActionListener(this::txtCodigoEstudiantilActionPerformed);
+
         btnRegitsrarEstudiantes.setText("Registrar estudiante");
+        btnRegitsrarEstudiantes.addActionListener(this::btnRegitsrarEstudiantesActionPerformed);
 
         jLabel8.setText("Área de trabajo");
 
         txtCedula.setText("jTextField1");
+        txtCedula.addActionListener(this::txtCedulaActionPerformed);
 
         jLabel9.setText("Cédula");
 
@@ -102,16 +115,21 @@ public class Vista extends javax.swing.JFrame {
         jLabel11.setText("Horas trabajadas");
 
         txtHorasTrabajadas.setText("jTextField1");
+        txtHorasTrabajadas.addActionListener(this::txtHorasTrabajadasActionPerformed);
 
         jLabel12.setText("Salario por hora");
 
         txtSalarioPorHora.setText("jTextField1");
+        txtSalarioPorHora.addActionListener(this::txtSalarioPorHoraActionPerformed);
 
         btnRegistarProfesores3.setText("Registrar profesor");
+        btnRegistarProfesores3.addActionListener(this::btnRegistarProfesores3ActionPerformed);
 
         btnReporteEstudiantes1.setText("Reporte de estudiantes");
+        btnReporteEstudiantes1.addActionListener(this::btnReporteEstudiantes1ActionPerformed);
 
         btnReporteProfesores1.setText("Reporte de profesores");
+        btnReporteProfesores1.addActionListener(this::btnReporteProfesores1ActionPerformed);
 
         txtAreaReporte.setColumns(20);
         txtAreaReporte.setRows(5);
@@ -319,6 +337,50 @@ public class Vista extends javax.swing.JFrame {
     private void txtAreaTrabajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAreaTrabajoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAreaTrabajoActionPerformed
+
+    private void btnReporteProfesores1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReporteProfesores1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReporteProfesores1ActionPerformed
+
+    private void btnReporteEstudiantes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReporteEstudiantes1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReporteEstudiantes1ActionPerformed
+
+    private void btnRegistarProfesores3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistarProfesores3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistarProfesores3ActionPerformed
+
+    private void txtSalarioPorHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalarioPorHoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSalarioPorHoraActionPerformed
+
+    private void txtHorasTrabajadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHorasTrabajadasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtHorasTrabajadasActionPerformed
+
+    private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCedulaActionPerformed
+
+    private void btnRegitsrarEstudiantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegitsrarEstudiantesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegitsrarEstudiantesActionPerformed
+
+    private void txtCodigoEstudiantilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoEstudiantilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCodigoEstudiantilActionPerformed
+
+    private void txtDia1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDia1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDia1ActionPerformed
+
+    private void txtMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMesActionPerformed
+
+    private void txtAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnioActionPerformed
 
     /**
      * @param args the command line arguments
