@@ -9,5 +9,11 @@ package Modelo;
  * @author Titoelgato
  */
 public class Estudiantes {
+    private String codigoEstudiantil;
+
+    public Estudiantes(String codigoEstudiantil) {
+        this.codigoEstudiantil = codigoEstudiantil;
+    }
+    
     
 }
