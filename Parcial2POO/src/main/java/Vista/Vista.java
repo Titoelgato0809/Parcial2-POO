@@ -20,6 +20,9 @@ public class Vista extends javax.swing.JFrame {
      */
     public Vista() {
         initComponents();
+        controlador = new Controlador();
+        setLocationRelativeTo(null);
+        txtAreaReporte.setEditable(false);
     }
 
     /**
