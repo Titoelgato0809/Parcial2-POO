@@ -40,4 +40,79 @@ public class Institucion {
         }
         return false;
     }
+        
+        public String reporteEstudiantes() {
+        String reporte = "REPORTE DE ESTUDIANTES\n\n";
+
+        for (int i = 0; i < cantidadEstudiantes; i++) {
+            Estudiantes e = estudiantes[i];
+            reporte += (i + 1) + ". " + e.getNombre() + "\n";
+            reporte += "   Código: " + e.getCodigoEstudiantil() + "\n";
+            reporte += "   Dirección: " + e.getDireccion() + "\n";
+            reporte += "   Teléfono: " + e.getTelefono() + "\n";
+            reporte += "   Nacimiento: " + e.getFechaNacimiento().getDia() + "/"
+                    + e.getFechaNacimiento().getMes() + "/"
+                    + e.getFechaNacimiento().getAnio() + "\n\n";
+        }
+
+        reporte += "Total de estudiantes: " + cantidadEstudiantes + "\n";
+        return reporte;
+    }
+        
+        public String reporteEstudiantes() {
+        String reporte = "REPORTE DE ESTUDIANTES\n\n";
+
+        for (int i = 0; i < cantidadEstudiantes; i++) {
+            Estudiantes e = estudiantes[i];
+            reporte += (i + 1) + ". " + e.getNombre() + "\n";
+            reporte += "   Código: " + e.getCodigoEstudiantil() + "\n";
+            reporte += "   Dirección: " + e.getDireccion() + "\n";
+            reporte += "   Teléfono: " + e.getTelefono() + "\n";
+            reporte += "   Nacimiento: " + e.getFechaNacimiento().getDia() + "/"
+                    + e.getFechaNacimiento().getMes() + "/"
+                    + e.getFechaNacimiento().getAnio() + "\n\n";
+        }
+
+        reporte += "Total de estudiantes: " + cantidadEstudiantes + "\n";
+        return reporte;
+    }
+        
+    public String reporteEstudiantes() {
+        String reporte = "REPORTE DE ESTUDIANTES\n\n";
+
+        for (int i = 0; i < cantidadEstudiantes; i++) {
+            Estudiantes e = estudiantes[i];
+            reporte += (i + 1) + ". " + e.getNombre() + "\n";
+            reporte += "   Código: " + e.getCodigoEstudiantil() + "\n";
+            reporte += "   Dirección: " + e.getDireccion() + "\n";
+            reporte += "   Teléfono: " + e.getTelefono() + "\n";
+            reporte += "   Nacimiento: " + e.getFechaNacimiento().getDia() + "/"
+                    + e.getFechaNacimiento().getMes() + "/"
+                    + e.getFechaNacimiento().getAnio() + "\n\n";
+        }
+        reporte += "Total de estudiantes: " + cantidadEstudiantes + "\n";
+        return reporte;
+    }
+        public String reporteProfesoresPorSalario() {
+        String reporte = "REPORTE DE PROFESORES (de mayor a menor pago)\n\n";
+
+        // Copia de los profesores registrados para ordenarlos
+        Profesores[] ordenados = new Profesores[cantidadProfesores];
+        for (int i = 0; i < cantidadProfesores; i++) {
+            ordenados[i] = profesores[i];
+        }
+
+        // Ordenamiento burbuja de mayor a menor pago
+        for (int i = 0; i < ordenados.length - 1; i++) {
+            for (int j = 0; j < ordenados.length - 1 - i; j++) {
+                if (ordenados[j].calcularPagoMensual() < ordenados[j + 1].calcularPagoMensual()) {
+                    Profesores temporal = ordenados[j];
+                    ordenados[j] = ordenados[j + 1];
+                    ordenados[j + 1] = temporal;
+                }
+            }
+        }
+
+
+
 }
