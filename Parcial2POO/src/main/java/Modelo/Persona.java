@@ -13,4 +13,13 @@ public class Persona {
     protected String direccion;
     protected String telefono;
     protected Fecha fechaNacimiento;
+
+    public Persona(String nombre, String direccion, String telefono, Fecha fechaNacimiento) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+    
+    
 }
