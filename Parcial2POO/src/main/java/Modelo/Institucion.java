@@ -31,4 +31,13 @@ public class Institucion {
         }
         return false;
     }
+        
+        public boolean registrarProfesor(Profesores profesor) {
+        if (cantidadProfesores < profesores.length) {
+            profesores[cantidadProfesores] = profesor;
+            cantidadProfesores++;
+            return true;
+        }
+        return false;
+    }
 }
