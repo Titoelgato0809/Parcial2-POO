@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.parcial2poo;
-
+import Controlador.Controlador;
+import Vista.Vista;
 /**
  *
  * @author Titoelgato
