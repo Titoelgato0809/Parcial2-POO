@@ -9,5 +9,8 @@ package Modelo;
  * @author Titoelgato
  */
 public class Persona {
-    
+    protected String nombre;
+    protected String direccion;
+    protected String telefono;
+    protected Fecha fechaNacimiento;
 }
