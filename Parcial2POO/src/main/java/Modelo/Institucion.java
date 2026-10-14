@@ -11,4 +11,15 @@ package Modelo;
 public class Institucion {
     private Estudiantes[] estudiantes;
     private Profesores[] profesores;
+    
+    private int cantidadEstudiantes;
+    private int cantidadProfesores;
+    
+    public Institucion() {
+        estudiantes = new Estudiantes[100];
+        profesores = new Profesores[100];
+
+        cantidadEstudiantes = 0;
+        cantidadProfesores = 0;
+    }
 }
